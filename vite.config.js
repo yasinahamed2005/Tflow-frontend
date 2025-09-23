@@ -2,8 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
+// Replace '/your-app/' with the path your app is served from
 export default defineConfig({
-  plugins: [react(),
-  tailwindcss(),],
+  base: '/', 
+  plugins: [react(), tailwindcss()],
 })
